@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>acpc10A.c</itemPath>
       <itemPath>addRev.c</itemPath>
       <itemPath>fctrl.c</itemPath>
       <itemPath>fctrl2.c</itemPath>
@@ -40,6 +41,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="acpc10A.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="addRev.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="fctrl.c" ex="false" tool="0" flavor2="0">
@@ -71,6 +74,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="acpc10A.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="addRev.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="fctrl.c" ex="false" tool="0" flavor2="0">
