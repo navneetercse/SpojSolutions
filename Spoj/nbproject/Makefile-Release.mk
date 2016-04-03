@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/fctrl.o \
+	${OBJECTDIR}/fctrl2.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/paliin.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/fctrl.o: fctrl.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/fctrl.o fctrl.c
+
+${OBJECTDIR}/fctrl2.o: fctrl2.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/fctrl2.o fctrl2.c
 
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}

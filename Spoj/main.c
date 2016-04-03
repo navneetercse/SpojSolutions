@@ -13,6 +13,7 @@
  */
 int palin(char *input);
 int fctrl(long int input);
+int fctrl2(int input);
 
 int main(){
 
@@ -28,7 +29,7 @@ int main(){
 		printf("%s\n",input1);	
 	}
    
-        //for fctr.c
+        //for fctrl.c
 	long int input2;	
 	scanf("%d", &t);
 	while(t--){
@@ -36,6 +37,15 @@ int main(){
 		fctrl(input2);
 	}
         
+        // for fctrl2.c
+        int input3;
+        scanf("%d",&t);
+	while(t--){
+	scanf("%d", &input3);
+	fctrl2(input3);
+	
+	
+	}
         
         
         
