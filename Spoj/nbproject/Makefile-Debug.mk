@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/addRev.o \
 	${OBJECTDIR}/fctrl.o \
 	${OBJECTDIR}/fctrl2.o \
 	${OBJECTDIR}/main.o \
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/spoj.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/spoj ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/addRev.o: addRev.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/addRev.o addRev.c
 
 ${OBJECTDIR}/fctrl.o: fctrl.c 
 	${MKDIR} -p ${OBJECTDIR}

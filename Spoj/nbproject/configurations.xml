@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>addRev.c</itemPath>
       <itemPath>fctrl.c</itemPath>
       <itemPath>fctrl2.c</itemPath>
       <itemPath>main.c</itemPath>
@@ -39,6 +40,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="addRev.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="fctrl.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="fctrl2.c" ex="false" tool="0" flavor2="0">
@@ -68,6 +71,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="addRev.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="fctrl.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="fctrl2.c" ex="false" tool="0" flavor2="0">

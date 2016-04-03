@@ -11,6 +11,7 @@
 /*
  * 
  */
+long int addRev(long int n);
 int palin(char *input);
 int fctrl(long int input);
 int fctrl2(int input);
@@ -18,6 +19,19 @@ int fctrl2(int input);
 int main(){
 
 	int t;
+        
+        //for addRev.c
+        int ncases;
+        long int n1,n2;
+        scanf("%d",&ncases);
+        
+        while(ncases--){
+                scanf("%ld%ld",&n1,&n2);
+                n1=addRev(n1);
+                n2=addRev(n2);
+                n1=n1+n2;
+                printf("%d\n",addRev(n1));
+        }
         
         // for palin.c
 	char input1[1000002];
