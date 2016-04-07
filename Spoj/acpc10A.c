@@ -1,5 +1,4 @@
 void acpc10A(){
-
 	int a1,a2,a3;
 	scanf("%d%d%d",&a1,&a2,&a3);
 	while(a1!=a2 && a2!=a3 & &a3!=0){
