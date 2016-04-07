@@ -1,5 +1,4 @@
 long int addRev(long int n){
-    
     long int s=0,d;
     while(n!=0){
         d=n%10;
