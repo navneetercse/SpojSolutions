@@ -35,12 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/INumber.o \
 	${OBJECTDIR}/acpc10A.o \
 	${OBJECTDIR}/addRev.o \
 	${OBJECTDIR}/fctrl.o \
 	${OBJECTDIR}/fctrl2.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/paliin.o
+	${OBJECTDIR}/paliin.o \
+	${OBJECTDIR}/prime.o
 
 
 # C Compiler Flags
@@ -66,6 +68,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/spoj.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/spoj ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/INumber.o: INumber.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/INumber.o INumber.c
 
 ${OBJECTDIR}/acpc10A.o: acpc10A.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -96,6 +103,11 @@ ${OBJECTDIR}/paliin.o: paliin.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/paliin.o paliin.c
+
+${OBJECTDIR}/prime.o: prime.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/prime.o prime.c
 
 # Subprojects
 .build-subprojects:

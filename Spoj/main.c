@@ -16,7 +16,7 @@ int palin(char *input);
 int fctrl(long int input);
 int fctrl2(int input);
 void acpc10A();
-
+int prime(int m, int n);
 int main(){
 
 	int t;
@@ -60,10 +60,16 @@ int main(){
 		
 	}
         
-    //acpc10A.c
-    acpc10A();   
+        //acpc10A.c
+        acpc10A();   
+     
+      //prime.c
+        int m,n;
+        scanf("%d %d",&m,&n);
         
-	return 0;
+        prime(m,n);
+    
+        return 0;
 
 }
 
