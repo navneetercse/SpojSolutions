@@ -41,8 +41,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/fctrl.o \
 	${OBJECTDIR}/fctrl2.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/paliin.o \
-	${OBJECTDIR}/prime.o
+	${OBJECTDIR}/paliin.o
 
 
 # C Compiler Flags
@@ -103,11 +102,6 @@ ${OBJECTDIR}/paliin.o: paliin.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/paliin.o paliin.c
-
-${OBJECTDIR}/prime.o: prime.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/prime.o prime.c
 
 # Subprojects
 .build-subprojects:

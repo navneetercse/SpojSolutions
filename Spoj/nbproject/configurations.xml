@@ -19,7 +19,6 @@
       <itemPath>fctrl2.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>paliin.c</itemPath>
-      <itemPath>prime.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -57,8 +56,6 @@
       </item>
       <item path="paliin.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="prime.c" ex="false" tool="0" flavor2="0">
-      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -93,8 +90,6 @@
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="paliin.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="prime.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
